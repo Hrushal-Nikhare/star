@@ -1,10 +1,10 @@
-import { monsters } from 'stardew-valley-data';
+import { monsters as getMonsters } from 'stardew-valley-data';
 import type { PageServerLoad } from './$types';
 
-let monsters = monsters().get()
+const monsterData = getMonsters().get();
 
 export const load: PageServerLoad = async () => {
     return {
-        monsters: monsters
+        monsters: monsterData
     };
 };

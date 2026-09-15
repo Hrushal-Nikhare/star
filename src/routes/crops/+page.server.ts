@@ -1,10 +1,10 @@
 import { crops } from 'stardew-valley-data';
 import type { PageServerLoad } from './$types';
 
-let crops = crops().get()
+const cropsA = crops().get()
 
 export const load: PageServerLoad = async () => {
     return {
-        crops: crops;
+        crops: cropsA
     };
 };

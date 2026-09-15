@@ -3,3 +3,5 @@
 
 	let { data }: PageProps = $props();
 </script>
+
+<h1>Crops</h1>
