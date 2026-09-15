@@ -57,7 +57,7 @@
 					number: {
 						value: 0,
 						limit: {
-							value: 50
+							value: 150
 						}
 					}
 				}
@@ -70,6 +70,8 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="stylesheet" href="/global.css" />
 </svelte:head>
 <div id="tsparticles"></div>
+
 {@render children()}

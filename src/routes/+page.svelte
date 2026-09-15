@@ -49,13 +49,6 @@
 		min-height: 100vh;
 		padding: clamp(2rem, 8vh, 5rem) 1rem;
 	}
-
-	h1.title {
-		margin-bottom: 1.5rem;
-		color: #f6d38a;
-		text-shadow: 3px 3px 0 #6b3515;
-	}
-
 	div.selection a {
 		color: var(--background-color);
 		text-decoration: none;
@@ -70,12 +63,6 @@
 		width: min(80vw, 900px);
 		max-width: calc(100% - 2rem);
 		padding: 16px;
-		border: 3px solid #9b4f18;
-		border-radius: 6px;
-		box-shadow:
-			inset 0 0 0 2px #ffd98b,
-			0 6px 0 #06101c,
-			0 10px 20px rgb(0 0 0 / 35%);
 	}
 
 	.selection {
@@ -85,6 +72,7 @@
 		align-items: center;
 		text-align: center;
 		min-width: 0;
+		
 	}
 
 	.selection a > div {
@@ -96,7 +84,8 @@
 		font-size: 1.35rem;
 		padding: 12px 16px;
 		border: 2px solid transparent;
-		border-radius: 4px;
+		border-radius: 8px;
+		/* border-color: #d16f05; */
 		transition:
 			background-color 150ms ease,
 			border-color 150ms ease,
@@ -108,6 +97,7 @@
 		background-color: rgb(255 235 174 / 45%);
 		border-color: #d16f05;
 		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgb(0 0 0 / 35%);
 	}
 
 	.selection img {
